@@ -1,4 +1,3 @@
-
 // LIFEOS - İlk sürüm
 
 // Bugünün tarihini göster
