@@ -1,0 +1,177 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #101827;
+  color: #f5f7fb;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  min-height: 100vh;
+}
+
+.app {
+  width: 100%;
+  max-width: 650px;
+  margin: auto;
+  padding: 28px 22px 35px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 55px;
+}
+
+.logo {
+  font-size: 25px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.logo span {
+  color: #38d9c5;
+}
+
+.date {
+  color: #9ba9bb;
+  font-size: 13px;
+}
+
+.welcome {
+  margin-bottom: 35px;
+}
+
+.eyebrow {
+  color: #38d9c5;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 16px;
+}
+
+.welcome h1 {
+  font-size: clamp(38px, 10vw, 54px);
+  line-height: 1.12;
+  letter-spacing: -2px;
+}
+
+.welcome h1 span {
+  color: #38d9c5;
+}
+
+.subtitle {
+  color: #9ba9bb;
+  margin-top: 15px;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+.assistant {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: #1b293a;
+  border: 1px solid #2b3b4d;
+  border-radius: 18px;
+  padding: 22px 18px;
+  margin-bottom: 38px;
+}
+
+.assistant-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 15px;
+  display: grid;
+  place-items: center;
+  background: #174d4b;
+  color: #38d9c5;
+  font-size: 25px;
+}
+
+.assistant h2 {
+  font-size: 17px;
+  margin-bottom: 6px;
+}
+
+.assistant p {
+  color: #aab6c5;
+  font-size: 13px;
+}
+
+.features h2 {
+  font-size: 19px;
+  margin-bottom: 18px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 13px;
+}
+
+.feature {
+  background: #1b293a;
+  color: white;
+  border: 1px solid #2b3b4d;
+  border-radius: 17px;
+  min-height: 145px;
+  padding: 18px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.feature:active {
+  transform: scale(0.97);
+  background: #24374a;
+}
+
+.feature span {
+  font-size: 25px;
+}
+
+.feature strong {
+  font-size: 15px;
+}
+
+.feature small {
+  color: #9ba9bb;
+  font-size: 12px;
+}
+
+.message {
+  margin-top: 25px;
+  padding: 17px;
+  background: #143b3b;
+  border-radius: 13px;
+  color: #8ce9dc;
+  font-size: 13px;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  color: #617187;
+  font-size: 10px;
+  margin-top: 42px;
+  letter-spacing: 2px;
+}
+
+@media (max-width: 360px) {
+  .app {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .feature {
+    padding: 14px;
+  }
+}

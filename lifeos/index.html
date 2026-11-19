@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101827">
+  <title>LIFEOS | Yaşam Asistanın</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <header>
+      <div class="logo">LIFE<span>OS</span></div>
+      <div class="date" id="today"></div>
+    </header>
+
+    <section class="welcome">
+      <p class="eyebrow">KİŞİSEL YAŞAM ASİSTANIN</p>
+      <h1>Hayatını daha<br><span>iyi yönet.</span></h1>
+      <p class="subtitle">Planla, geliş, takip et. Her şey tek yerde.</p>
+    </section>
+
+    <section class="assistant">
+      <div class="assistant-icon">✦</div>
+      <div>
+        <h2>Merhaba!</h2>
+        <p>Bugün senin için ne yapabiliriz?</p>
+      </div>
+    </section>
+
+    <section class="features">
+      <h2>Yaşam alanların</h2>
+      <div class="cards">
+        <button class="feature" onclick="showMessage('Günlük planlama yakında burada!')">
+          <span>📅</span>
+          <strong>Planlama</strong>
+          <small>Gününü düzenle</small>
+        </button>
+        <button class="feature" onclick="showMessage('Alışkanlık takibi yakında burada!')">
+          <span>🎯</span>
+          <strong>Alışkanlıklar</strong>
+          <small>Hedeflerini takip et</small>
+        </button>
+        <button class="feature" onclick="showMessage('Finans yönetimi yakında burada!')">
+          <span>💰</span>
+          <strong>Finans</strong>
+          <small>Paranı yönet</small>
+        </button>
+        <button class="feature" onclick="showMessage('Kişisel gelişim yakında burada!')">
+          <span>🌱</span>
+          <strong>Gelişim</strong>
+          <small>Kendini geliştir</small>
+        </button>
+      </div>
+    </section>
+
+    <section class="message">
+      <p id="message">LIFEOS seninle birlikte gelişiyor.</p>
+    </section>
+
+    <footer> L I F E O S · YOUR LIFE, ORGANIZED </footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
